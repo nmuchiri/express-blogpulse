@@ -68,4 +68,17 @@ router.post('/:id', (req, res) => {
 })
 
 
+// router.get('/:id/comments', (req, res) => {
+//   db.comment.findAll({
+//     where:{id: req.params.id}
+//   })
+//   .then((comments) => {
+//     res.render(comments/show, { comment: comment })
+//   })
+  
+//   .catch((error) => {
+//     res.status(400).render('main/404')
+//   })
+// })
+
 module.exports = router
