@@ -3,6 +3,7 @@ let ejsLayouts = require('express-ejs-layouts')
 let db = require('./models')
 let moment = require('moment')
 let app = express()
+require('dotenv').config()
 
 app.set('view engine', 'ejs')
 
@@ -31,6 +32,12 @@ app.get('/', (req, res) => {
     res.status(400).render('main/404')
   })
 })
+
+
+
+
+
+
 
 app.listen(process.env.PORT || 3000, () => {
   console.log(`You're listening to the smooth sounds of port ${process.env.PORT}`)

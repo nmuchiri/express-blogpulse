@@ -7,5 +7,14 @@
 <p><%= article.content %></p>
 
 <hr />
+<form action="/articles/:id" method="POST">
+  <div class="form-group">
+    <label for="commentLink">Write a comment</label>
+    <input type="text" class="form-control" id="commentLink" name="commentLink" required>
+    <!-- <label for="name">Write your name</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div> -->
+  <input type="submit" class="btn btn-primary">
+  </form>
 
 <a href="/">&larr; Back Home</a>
